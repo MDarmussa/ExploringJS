@@ -29,4 +29,25 @@ function tipAmount(billAmount, quality) {
           return billAmount + atip;
      }
 
-console.log(totalAmount(30, tipAmount(30, "good")));
+// console.log(totalAmount(tipAmount(50, "good")));
+
+//or 
+
+function tipAmount(bill, quality) {
+
+     if(quality == "good"){
+          return (`Total bill is $${bill}, and the tip is: $${bill * .20}`);
+     } else if (quality == "fair") {
+          return (`Total bill is $${bill} and the tip is: $${bill * .15}`);
+     } else if (quality == "bad"){
+          return (`Total bill is $${bill} and the tip is: $${bill * .10}`);
+     } else {
+          return 'zero Dollar';
+     }
+}
+console.log(tipAmount(100, "fair"));
+
+     // function totalAmount(billAmount, atip) {
+     //      return billAmount + atip;
+     // }
+

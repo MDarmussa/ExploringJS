@@ -11,18 +11,16 @@
 // solution
 
 
-function tipAmount (tip, quality) {
-
-     if (quality == "good") {
-          return tip * 0.2;
+function tipAmount(bill, quality) {
+     if(quality == "good"){
+          return (` the tip is: $${bill * 1.20}`);
      } else if (quality == "fair") {
-          return tip * 0.15;
-     } else if (quality == "bad") {
-          return tip * 0.10;
+          return (` the tip is: $${bill * 1.15}`);
+     } else if (quality == "bad"){
+          return (` the tip is: $${bill * 1.10}`);
      } else {
-          return ("error");
+          return 'zero Dollar'
      }
-
 }
 
-console.log (tipAmount(10, "fair"));
+console.log(tipAmount(100, 'good'))

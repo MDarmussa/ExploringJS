@@ -27,5 +27,15 @@ function printNumbers (num1, num2) {
      return i;
 
 };
-console.log(printNumbers(1, 1));
-printNumbers(1, 5); //Better way than console
+console.log(printNumbers(1, 5));
+// printNumbers(1, 5); //Better way than console
+
+//or
+
+function printNumbers (num1, num2) {
+     while (num1 <= num2) {
+          console.log(num1)
+          num1++;
+     }
+}
+// printNumbers(-5, 10);
